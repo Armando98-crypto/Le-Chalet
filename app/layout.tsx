@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.lechalet.store"),
+  metadataBase: new URL("https://armando98-crypto.github.io/Le-Chalet"),
   title: "Le Chalet | O Melhor Encontra-se Aqui — Lubango, Angola",
   description:
     "Restaurante, café e loja na Estrada da Tundavala. Queijos raclette, Gouda, enchidos e produtos artesanais da Queijaria Serra N'Tandavala a 1.985 m de altitude. Lubango, Viana e Luanda.",

@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
+const repo = "Le-Chalet";
+
 const nextConfig = {
+  output: "export",
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
   images: {
-    formats: ["image/avif", "image/webp"],
+    unoptimized: true,
   },
 };
 

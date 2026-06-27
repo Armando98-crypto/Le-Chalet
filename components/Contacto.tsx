@@ -10,6 +10,7 @@ import {
   SOCIAL_LINKS,
   EMAIL,
   ONLINE_STORE_LINK,
+  FORM_ENDPOINT,
 } from "@/lib/constants";
 
 interface FormData {
@@ -58,7 +59,7 @@ export default function Contacto() {
     setStatus({ type: "loading" });
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
@@ -76,7 +77,7 @@ export default function Contacto() {
     } catch {
       setStatus({
         type: "error",
-        message: "Erro de rede. Verifique a sua ligação.",
+        message: "Serviço indisponível — contacte-nos via WhatsApp (+244 923 897 770) ou visite a loja online.",
       });
     }
   };

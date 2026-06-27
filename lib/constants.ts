@@ -37,6 +37,9 @@ export const IMAGES = {
   logo: "/images/logo.jpg",
 } as const;
 
+export const FORM_ENDPOINT =
+  process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "/api/contact";
+
 export const GALLERY_IMAGES = [
   {
     src: "/images/sobre.jpg",

@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://www.lechalet.store";
+const baseUrl = "https://armando98-crypto.github.io/Le-Chalet";
 
+export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
