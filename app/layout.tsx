@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { IMAGES, FACEBOOK_LINK } from "@/lib/constants";
+import { FACEBOOK_LINK } from "@/lib/constants";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     url: FACEBOOK_LINK,
     images: [
       {
-        url: IMAGES.og,
+        url: "/images/hero.jpg",
         width: 1024,
         height: 630,
         alt: "Restaurante Le Chalet na Estrada da Tundavala, Lubango",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     title: "Le Chalet — O Sabor Autêntico de Angola",
     description:
       "Queijos artesanais, raclette e produtos da Serra N'Tandavala no Lubango, Viana e Luanda.",
-    images: [IMAGES.og],
+    images: ["/images/hero.jpg"],
   },
   robots: {
     index: true,

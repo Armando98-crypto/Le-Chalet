@@ -7,6 +7,12 @@
  * Fotos via guialnl.com (autoria LNL — substituir pelas oficiais do Facebook quando disponíveis)
  */
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function p(path: string): string {
+  return `${BASE_PATH}${path}`;
+}
+
 export const WHATSAPP_NUMBER = "244923897770";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const ONLINE_STORE_LINK = "https://www.lechalet.store/";
@@ -31,67 +37,67 @@ export const SOCIAL_LINKS = [
 
 /** Fotos reais em public/images/ — origem: Facebook + review LNL (2025) */
 export const IMAGES = {
-  hero: "/images/hero.jpg",
-  sobre: "/images/sobre.jpg",
-  og: "/images/hero.jpg",
-  logo: "/images/logo.jpg",
-} as const;
+  hero: p("/images/hero.jpg"),
+  sobre: p("/images/sobre.jpg"),
+  og: p("/images/hero.jpg"),
+  logo: p("/images/logo.jpg"),
+};
 
 export const FORM_ENDPOINT =
   process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "/api/contact";
 
 export const GALLERY_IMAGES = [
   {
-    src: "/images/sobre.jpg",
+    src: p("/images/sobre.jpg"),
     alt: "Tábua de queijos e enchidos Le Chalet",
     span: "row-span-2",
   },
   {
-    src: "/images/hero.jpg",
+    src: p("/images/hero.jpg"),
     alt: "Restaurante Le Chalet com vista para a serra",
     span: "",
   },
   {
-    src: "/images/galeria-2.jpg",
+    src: p("/images/galeria-2.jpg"),
     alt: "Prato signature no Le Chalet Lubango",
     span: "",
   },
   {
-    src: "/images/galeria-3.jpg",
+    src: p("/images/galeria-3.jpg"),
     alt: "Ambiente interior do restaurante",
     span: "",
   },
   {
-    src: "/images/galeria-1.jpg",
+    src: p("/images/galeria-1.jpg"),
     alt: "Esplanada Le Chalet rodeada de verde",
     span: "row-span-2",
   },
   {
-    src: "/images/galeria-4.jpg",
+    src: p("/images/galeria-4.jpg"),
     alt: "Detalhe gastronómico Le Chalet",
     span: "",
   },
   {
-    src: "/images/galeria-5.jpg",
+    src: p("/images/galeria-5.jpg"),
     alt: "Produtos artesanais da queijaria",
     span: "",
   },
   {
-    src: "/images/galeria-6.jpg",
+    src: p("/images/galeria-6.jpg"),
     alt: "Café Le Chalet na Estrada da Tundavala",
     span: "",
   },
   {
-    src: "/images/galeria-7.jpg",
+    src: p("/images/galeria-7.jpg"),
     alt: "Experiência gastronómica com vista",
     span: "",
   },
   {
-    src: "/images/galeria-8.jpg",
+    src: p("/images/galeria-8.jpg"),
     alt: "Queijos e produtos da Serra N'Tandavala",
     span: "",
   },
-] as const;
+];
 
 export const LOCATIONS = [
   {
